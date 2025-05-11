@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Pixelify Sans", sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(124, 143, 178);
+}
+
+#display-gameboard {
+    width: 480px;
+    height: 510px;
+    position: relative;
+}
+
+#gameboard {
+    width: 480px;
+    height: 480px;
+    display: flex;
+    flex-wrap: wrap;
+    outline: 4px solid rgb(31, 32, 37);
+}
+
+.square {
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.square svg {
+    height: 50px;
+    width: 50px;
+}
+
+.piece {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.white-square {
+    background-color: rgba(226, 217, 228, 20);
+}
+
+.pink-square {
+    background-color: rgb(191, 125, 133);
+}
+
+.black {
+    fill: rgb(31, 32, 37);
+}
+
+.white {
+    fill: rgb(226, 217, 228);
+    stroke: rgb(31, 32, 37);
+    stroke-width: 10px;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.piece-list{
+    width: 368px;
+    height: 68px;
+    display: flex;
+    border: 4px solid rgb(31, 32, 37);
+    margin-bottom: 5px;
+}
+
+#piece-list-white{
+    margin-bottom: 30px;
+}
+
+.valid {
+    fill: rgb(124, 143, 178);
+    position: absolute;
+}
+
+.matrix {
+    background-color: rgb(236, 184, 125);
+    outline: 1px solid black
+}
